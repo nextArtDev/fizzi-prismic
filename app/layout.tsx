@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen ${alpino.variable} ${geistMono.variable} antialiased`}
+        className={`min-h-screen bg-yellow-300 overflow-x-hidden ${alpino.variable} ${geistMono.variable} antialiased`}
       >
         <Header/>
         {children}
