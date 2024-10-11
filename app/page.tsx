@@ -1,9 +1,11 @@
 import Scene from '@/components/explotsion/Scene'
+ 
 
 export default function Home() {
   return (
-    <div className=" h-screen">
+    <div className="bg-white min-h-screen overflow-x-hidden">
       {/* <Scene /> */}
+      {/* <SvgAnimation/> */}
       1
     </div>
   )
