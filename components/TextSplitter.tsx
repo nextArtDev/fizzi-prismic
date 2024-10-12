@@ -16,7 +16,7 @@ export function TextSplitter({
   const words = text.split(" ");
 
   return words.map((word: string, wordIndex: number) => {
-    const splitText = word.split("");
+    const splitText = word.split(" ");
     return (
       <span
         className={clsx("split-word", className)}
