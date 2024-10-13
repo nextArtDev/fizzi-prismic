@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import Header from '@/components/Header'
+import ViewCanvas from '@/components/ViewCanvas'
 
  
 const geistMono = localFont({
@@ -35,6 +36,7 @@ export default function RootLayout({
       >
         <Header/>
         {children}
+        <ViewCanvas/>
       </body>
     </html>
   )
