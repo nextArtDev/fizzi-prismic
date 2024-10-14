@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { Environment, OrbitControls } from "@react-three/drei";
-import { Group } from "three";
+import { Group, Object3DEventMap } from "three";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -23,10 +23,10 @@ export default function Scene({}: Props) {
   const can4Ref = useRef<Group>(null);
   const can5Ref = useRef<Group>(null);
 
-  const can1GroupRef = useRef<Group>(null);
-  const can2GroupRef = useRef<Group>(null);
+  const can1GroupRef = useRef<Group<Object3DEventMap>>(null);
+  const can2GroupRef = useRef<Group<Object3DEventMap>>(null);
 
-  const groupRef = useRef<Group>(null);
+  const groupRef = useRef<Group<Object3DEventMap>>(null);
 
   const FLOAT_SPEED = 1.5;
 
@@ -62,8 +62,9 @@ export default function Scene({}: Props) {
         ease: "back.out(1.4)",
       },
     });
-
+// we animate timeline if we have'nt scroll yet, it means we don't set an animation when we scrolled
     if (window.scrollY < 20) {
+      // rotation and position at first glance and before scrolling
       introTl
         .from(can1GroupRef.current.position, { y: -5, x: 1 }, 0)
         .from(can1GroupRef.current.rotation, { z: 3 }, 0)
@@ -100,7 +101,7 @@ export default function Scene({}: Props) {
       .to(can3Ref.current.rotation, { z: -0.1 }, 0)
 
       // Can 4 - Strawberry Lemonade
-      .to(can4Ref.current.position, { x: 0, y: -0.3, z: 0.5 }, 0)
+      .to(can4Ref.current.position, { x: 0, y: -0.3, z: 1 }, 1)
       .to(can4Ref.current.rotation, { z: 0.3 }, 0)
 
       // Can 5 -Watermelon

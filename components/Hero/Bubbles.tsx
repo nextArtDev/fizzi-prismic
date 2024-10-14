@@ -12,7 +12,7 @@ const o = new THREE.Object3D();
 export function Bubbles({
   count = 300,
   speed = 5,
-  bubbleSize = 0.05,
+  bubbleSize = 0.03,
   opacity = 0.5,
   repeat = true,
 }) {

@@ -15,6 +15,8 @@ import { useStore } from "@/hooks/useStore";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import Image from "next/image";
 
+//https://r3f.docs.pmnd.rs/advanced/scaling-performance
+
 // anytime we use gsap or scroll plugin we element should know about it. 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
