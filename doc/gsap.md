@@ -107,7 +107,17 @@ ScrollTrigger.create({
 });
 ```
 
-```typescript```
+## How to use gsap for list of children 
+
+```typescript
+
+    gsap.set(
+      wordsRef.current.children.map((word) => word.position),
+      { ...getXYPositions(7), z: 2 },
+    );
+
+```
+
 ```typescript```
 ```typescript```
 ```typescript```

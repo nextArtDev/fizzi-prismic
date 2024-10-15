@@ -5,12 +5,11 @@ import { View } from "@react-three/drei";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 
+// adding loader without hydration error; we use it when it needs only.
 const Loader = dynamic(
   () => import("@react-three/drei").then((mod) => mod.Loader),
   { ssr: false },
 );
-
- 
 
 export default function ViewCanvas( ) {
   return (

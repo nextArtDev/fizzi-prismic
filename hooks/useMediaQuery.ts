@@ -18,3 +18,4 @@ export function useMediaQuery(query: string, serverFallback: boolean): boolean {
     () => serverFallback,
   );
 }
+ 
