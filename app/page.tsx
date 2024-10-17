@@ -1,4 +1,5 @@
-import Scene from '@/components/explotsion/Scene'
+import Carousel from '@/components/carouseel'
+ 
 import Hero from '@/components/Hero'
 import SkyDive from '@/components/SkyDive'
  
@@ -10,7 +11,8 @@ export default async function Home() {
     <div className=" min-h-screen ">
       <Hero/>
       <SkyDive/>
-      {/* <Scene /> */}
+      <Carousel/>
+ 
       {/* <SvgAnimation/> */}
  
     </div>
