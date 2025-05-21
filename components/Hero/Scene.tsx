@@ -113,7 +113,7 @@ export default function Scene({}: Props) {
         1.3,
       );
   });
-
+ 
   return (
     <group ref={groupRef}>
       <group ref={can1GroupRef}>
