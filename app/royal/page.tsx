@@ -1,10 +1,11 @@
 import React from 'react'
+import Hero from './components/hero'
 
-type Props = {}
+ 
 
-const page = (props: Props) => {
+const page = ( ) => {
   return (
-    <div>page</div>
+    <div className='mini-h-screen w-full h-screen '><Hero/></div>
   )
 }
 
