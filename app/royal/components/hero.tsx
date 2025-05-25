@@ -6,6 +6,7 @@ import heroImage from '../../../public/royal/hero-image.jpg'
 import Link from 'next/link'
  
 import { FadeIn } from './fade-in'
+import { RevealText } from './reveal-text'
  
 
 const Hero = ( ) => {
@@ -22,31 +23,22 @@ const Hero = ( ) => {
         <Image src={heroImage} priority alt='hero image' fill className='object-cover'/>
             </FadeIn>
         <div className="relative flex h-screen flex-col justify-center">
- 
-
-          <h1  className="font-display max-w-xl text-6xl leading-none text-neutral-50 md:text-7xl lg:text-8xl">Effortless Elegance</h1>
+  
+        <RevealText text="Effortless Elegance"
+        id="hero-heading"
+        className="font-display max-w-xl text-6xl leading-none text-neutral-50md:text-7xl lg:text-8xl"
+        staggerAmount={0.2}
+        duration={1.7}   />
         <FadeIn
         // important factor to go up or down: translate-y-8
           className="mt-6 max-w-md translate-y-8  text-lg text-neutral-100"
           vars={{ delay: 1, duration: 1.3 }}
         >
+
         
         <p  className=" " >An expression of quiet luxury, Côte Royale is designed for the man who commands attention without seeking it. A reflection of nature’s raw beauty.</p>
         </FadeIn>
-
-        {/* <FadeIn
-          className="mt-8 translate-y-5"
-          vars={{ delay: 1.7, duration: 1.1 }}
-        >
-          {slice.primary.button.map((link) => (
-            <ButtonLink
-              key={link.key}
-              field={link}
-              className="w-fit"
-              variant="Secondary"
-            />
-          ))}
-        </FadeIn> */}
+ 
          <FadeIn
           className="mt-8 translate-y-5"
           vars={{ delay: 1.7, duration: 1.1 }}
