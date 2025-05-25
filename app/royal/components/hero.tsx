@@ -1,17 +1,34 @@
-import React from 'react'
+'use client'
+import React, { useRef } from 'react'
 import { Bounded } from './Bounded'
 import Image from 'next/image'
 import heroImage from '../../../public/royal/hero-image.jpg'
 import Link from 'next/link'
- 
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP);
 
 const Hero = ( ) => {
+  
+  const containerRef = useRef<HTMLDivElement>(null)
+  useGSAP(()=>{
+    gsap.to('.bg-image',{
+      scale:1,
+      opacity:0.5,
+      ease:'power3.out',
+      duration:5,
+    })
+  },{scope:containerRef})
+  
+  
   return (
     <Bounded
+    ref={containerRef}
         className={`relative w-full h-full  overflow-hidden bg-neutral-950 `}>
-            <figure className="absolute inset-0 scale-125 ">
+            <figure className="bg-image opacity-0 absolute inset-0 scale-125 ">
 
-        <Image src={heroImage} priority alt='hero image' fill className='object-cover opacity-50'/>
+        <Image src={heroImage} priority alt='hero image' fill className='object-cover'/>
             </figure>
         <div className="relative flex h-screen flex-col justify-center">
         {/* <RevealText
