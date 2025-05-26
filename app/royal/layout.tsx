@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { Footer } from "./components/Footer"
 
 export const metadata: Metadata = {
   title: 'Royal',
@@ -15,7 +16,7 @@ export default function RootLayout({
         className={`min-h-screen  overflow-x-hidden  `}
       >
         {children}
-
+<Footer />
       </section>
  
   )

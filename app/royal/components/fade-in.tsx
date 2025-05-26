@@ -26,6 +26,7 @@ export const FadeIn = ({
     () => {
       const mm = gsap.matchMedia();
 
+      // accessability when the user doesn't prefer animation of want it
       mm.add("(prefers-reduced-motion: no-preference)", () => {
         gsap.to(containerRef.current, {
           duration: 5,
@@ -41,6 +42,7 @@ export const FadeIn = ({
         });
       });
 
+      // Accessability, no animation needed
       mm.add("(prefers-reduced-motion: reduce)", () => {
         gsap.to(containerRef.current, {
           duration: 0.5,

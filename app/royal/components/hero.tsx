@@ -18,7 +18,8 @@ const Hero = ( ) => {
     <Bounded
  
         className={`relative w-full h-full  overflow-hidden bg-neutral-950 `}>
-            <FadeIn vars={{ scale: 1, opacity: 0.5 }} className=" absolute inset-0 scale-125 ">
+          {/* motion-safe: for accessability; just scale eit up when its needed */}
+            <FadeIn vars={{ scale: 1, opacity: 0.5 }} className=" absolute inset-0 motion-safe:scale-125 motion-reduce:opacity-50 ">
 
         <Image src={heroImage} priority alt='hero image' fill className='object-cover'/>
             </FadeIn>
