@@ -60,7 +60,7 @@ export const NavBar = ( ) => {
           <div className="absolute left-1/2 -translate-x-1/2 transform">
             <Link href="/">
               <Image
-                src="/logo.svg"
+                src="/royal/logo.svg"
                 alt="Côte Royale Paris"
                 width={180}
                 height={30}
