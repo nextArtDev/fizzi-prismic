@@ -58,9 +58,9 @@ featuredImage ,
           // field={fragrance.data.feature_image}
           src={image}
           className="object-cover opacity-40 md:opacity-100"
-          // fill
-          width={1150}
-          quality={90}
+          fill
+          // width={1150}
+          // quality={90}
           alt=""
         />
       </div>

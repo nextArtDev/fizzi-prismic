@@ -7,7 +7,8 @@ import FragranceList from './components/fragrance/fragrance-list'
 
 const page = ( ) => {
   return (
-    <div className='pt-14 md:pt-16 mini-h-screen w-full '><Hero/>
+    <div className='pt-14 md:pt-16 mini-h-screen w-full '>
+      <Hero/>
     <ScrollText/>
     <FragranceList/>
   {/* <div className="h-screen bg-green-300"></div>

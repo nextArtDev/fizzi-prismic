@@ -1,6 +1,8 @@
 import Igins from '../../../public/royal/ignes.png' 
-import IginsAd from '../../../public/royal/ignis.png' 
 import love from '../../../public/royal/love.png' 
+import IginsAd from '../../../public/royal/ignis.png' 
+import Aqua from '../../../public/royal/aqua.png' 
+import Terra from '../../../public/royal/terra.png' 
 export const navigation_link = [
     {id:'1', label:'Home' ,href:'/' }
     ,{id:'2', label:'Ignis' ,href:'/' }
@@ -18,7 +20,9 @@ export const productFeature =[
  
 ] 
 export const fragrances =[
-    {id:'1', title:'Ignis', subtitle:'Eau de Parfum', mode:'bold',scent:'spicy',price:'1100', image:Igins, featuredImage:IginsAd,description:'Forged in fire, Ignis is a bold statement of power and poise. Smoldering spices and rich woods create an intense, magnetic presence. For the man whose quiet confidence speaks volumes, this fragrance captures fire’s raw allure—uncompromising and unforgettable.'},
+    {id:'1', title:'Ignis', subtitle:'Eau de Parfum', mode:'bold',scent:'spicy',price:'1100', image:IginsAd, featuredImage:Igins ,description:'Forged in fire, Ignis is a bold statement of power and poise. Smoldering spices and rich woods create an intense, magnetic presence. For the man whose quiet confidence speaks volumes, this fragrance captures fire’s raw allure—uncompromising and unforgettable.'},
+    {id:'1', title:'Ignis', subtitle:'Eau de Parfum', mode:'bold',scent:'spicy',price:'1100', image:Aqua, featuredImage:IginsAd,description:'Forged in fire, Ignis is a bold statement of power and poise. Smoldering spices and rich woods create an intense, magnetic presence. For the man whose quiet confidence speaks volumes, this fragrance captures fire’s raw allure—uncompromising and unforgettable.'},
+    {id:'1', title:'Ignis', subtitle:'Eau de Parfum', mode:'bold',scent:'spicy',price:'1100', image:Terra, featuredImage:IginsAd,description:'Forged in fire, Ignis is a bold statement of power and poise. Smoldering spices and rich woods create an intense, magnetic presence. For the man whose quiet confidence speaks volumes, this fragrance captures fire’s raw allure—uncompromising and unforgettable.'},
     // {id:'2', title:'ignis',subtitle:'', mode:'',scent:'',price:'', image:Igins, featuredImage:IginsAd,description:''},
     // {id:'3', title:'ignis',subtitle:'', mode:'',scent:'',price:'', image:Igins, featuredImage:IginsAd,description:''},
     // {id:'', title:'ignis',subtitle:'', mode:'',scent:'',price:'', image:Igins, featuredImage:IginsAd,description:''},
