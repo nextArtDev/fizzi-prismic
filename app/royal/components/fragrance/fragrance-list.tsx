@@ -29,12 +29,12 @@ const FragranceList = ( ) => {
     >
       <div className="mx-auto space-y-8">
         <p className="text-sm font-light tracking-[0.2em] uppercase">
-          {"Powerful Simplicity."}
+        Our Fragrances
         </p>
         <RevealText
         //   field={slice.primary.heading}
         //   as="h2"
-        text={'Powerful Simplicity.'}
+        text='An Essence for Every Man'
         //   id={`fragrance-list-heading-${slice.id}`}
           id={`fragrance-list-heading-1`}
           align="center"
@@ -45,7 +45,7 @@ const FragranceList = ( ) => {
 
         <div className="mx-auto max-w-2xl text-lg text-balance text-gray-300">
           {/* <PrismicRichText field={slice.primary.body} /> */}
-          <p>{"'An expression of quiet luxury, Côte Royale is designed for the man who commands attention without seeking it. A reflection of nature’s raw beauty, redefined for today.'"} </p>
+          <p>An expression of quiet luxury, Côte Royale is designed for the man who commands attention without seeking it.</p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-12">
