@@ -21,7 +21,8 @@ export const TransitionLink = ({
   onClick,
   tabIndex,
 }: TransitionLinkProps) => {
-  const url = href ?? asLink(field ?? doc);
+  // const url = href ?? asLink(field ?? doc);
+  const url = href  ;
 
   if (!url) {
     console.warn("TransitionLink: No URL Found");

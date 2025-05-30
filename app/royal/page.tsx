@@ -3,6 +3,7 @@ import Hero from './components/hero'
 import ScrollText from './components/scroll-text'
 import FragranceList from './components/fragrance/fragrance-list'
 import ProductFeature from './components/product-feature'
+import CallToAction from './components/call-to-action'
 
  
 
@@ -13,6 +14,7 @@ const page = ( ) => {
     <ScrollText/>
     <ProductFeature/>
     <FragranceList/>
+    <CallToAction/>
   {/* <div className="h-screen bg-green-300"></div>
   <div className="h-screen bg-yellow-300"></div> */}
     </div>
