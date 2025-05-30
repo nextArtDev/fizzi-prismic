@@ -76,12 +76,8 @@ const ProductFeature  = async ( ) => {
               </h3>
 
               <p className="mt-2 text-gray-400">Eau de Parfum</p>
-              <Link
-                 href={'/royal'}
-                className="mt-6"
-              >
-                Shop Now
-              </Link>
+              <Link  href={''} className=" w-fit inline-flex items-center justify-center px-12 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300  border border-white text-white hover:bg-white/20"
+         >Shop now</Link>
             </div>
             <p className="mt-4 text-gray-100" aria-label="Product price">
               <span>{formattedPrice}</span>

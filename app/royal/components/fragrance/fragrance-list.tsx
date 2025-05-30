@@ -1,25 +1,9 @@
-import { FC } from "react";
+ 
 import { Bounded } from "../Bounded";
 import { RevealText } from "../reveal-text";
 import FragranceDisplay from "./fragrance-display";
 import { fragrances } from "../../constants";
-// import { Content, isFilled } from "@prismicio/client";
-// import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-
-// import { Bounded } from "@/royal/components/Bounded";
-// import { RevealText } from "@/royal/components/RevealText";
-// import { FragranceDisplay } from "./FragranceDisplay";
-
-/**
- * Props for `FragranceList`.
- */
-// export type FragranceListProps =
-//   SliceComponentProps<Content.FragranceListSlice>;
-
-/**
- * Component for "FragranceList" Slices.
- */
-// const FragranceList: FC<FragranceListProps> = ({ slice }) => {
+ 
 const FragranceList = ( ) => {
   return (
     <Bounded
@@ -43,8 +27,7 @@ const FragranceList = ( ) => {
           className="font-display text-5xl uppercase sm:text-6xl md:text-7xl lg:text-8xl"
         />
 
-        <div className="mx-auto max-w-2xl text-lg text-balance text-gray-300">
-          {/* <PrismicRichText field={slice.primary.body} /> */}
+        <div className="mx-auto max-w-2xl text-lg text-balance text-gray-300"> 
           <p>An expression of quiet luxury, Côte Royale is designed for the man who commands attention without seeking it.</p>
         </div>
 
@@ -63,7 +46,7 @@ const FragranceList = ( ) => {
         </div>
       </div>
     </Bounded>
-  );
-};
+  )
+}
 
 export default FragranceList;

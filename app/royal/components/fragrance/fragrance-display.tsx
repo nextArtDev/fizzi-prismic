@@ -9,7 +9,7 @@ import { HiPlus } from "react-icons/hi2";
 import { FadeIn } from "../fade-in";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { FragranceAttributes } from "./fragrance-attributes";
+import { FragranceAttributes, MoodKey, ScentProfileKey } from "./fragrance-attributes";
 
 type FragranceDisplayProps = {
  
@@ -27,7 +27,7 @@ featuredImage:StaticImageData
 };
 
  const FragranceDisplay = async ({ 
-  id,
+ 
 title,
 description,
 subtitle,
@@ -35,7 +35,7 @@ mode,
 scent,
 price,
 image,
-featuredImage ,
+ 
  }: FragranceDisplayProps) => {
   console.log({title,
     description,
@@ -44,8 +44,7 @@ featuredImage ,
     scent,
     price,
     image,})
-//   const client = createClient();
-//   const fragrance = await client.getByID<Content.FragranceDocument>(id);
+ 
 
   return (
     <FadeIn
@@ -71,7 +70,7 @@ featuredImage ,
         start="top 50%"
       >
         <h3 className="font-display mb-3 text-5xl md:text-6xl lg:text-7xl">
-          {/* <PrismicText field={fragrance.data.title} /> */}
+         
 
           {title}
         </h3>
@@ -84,24 +83,25 @@ featuredImage ,
           <p>
             {description}
           </p>
-          {/* <PrismicRichText field={fragrance.data.description} /> */}
+     
         </div>
 
         <FragranceAttributes
-          scentProfile={scent}
-          mood={ mode}
+          scentProfile={scent as ScentProfileKey}
+          mood={ mode as MoodKey}
           className="mb-10"
         />
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 items-center justify-center">
           {/* <ButtonLink document={fragrance} variant="Secondary">
             Discover
           </ButtonLink> */}
           <Link  href={''} className="">
             Discover
           </Link>
-
-          <Link  href="#"  >
+          <Link  href={''} className=" w-fit inline-flex items-center justify-center px-8 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300  border border-white text-white hover:bg-white/20"
+         >
+          
             <HiPlus className="mr-2" /> <span>Add to bag</span>
           </Link>
         </div>

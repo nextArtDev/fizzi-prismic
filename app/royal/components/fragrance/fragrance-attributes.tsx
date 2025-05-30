@@ -10,8 +10,8 @@ import {
 
 // Define specific literal types for scent profile and mood,
 // independent of Prismic's Content type.
-type ScentProfileKey = "spicy" | "woody" | "fresh";
-type MoodKey = "bold" | "grounded" | "refreshing";
+export type ScentProfileKey = "spicy" | "woody" | "fresh";
+export type MoodKey = "bold" | "grounded" | "refreshing";
 
 type AttributeData = {
   label: string;
