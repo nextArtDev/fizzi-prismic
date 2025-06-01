@@ -27,7 +27,7 @@ featuredImage:StaticImageData
 };
 
  const FragranceDisplay = async ({ 
- 
+ id,
 title,
 description,
 subtitle,
@@ -96,7 +96,7 @@ image,
           {/* <ButtonLink document={fragrance} variant="Secondary">
             Discover
           </ButtonLink> */}
-          <Link  href={''} className="">
+          <Link  href={`/royal/fragrance/${id}`} className="">
             Discover
           </Link>
           <Link  href={''} className=" w-fit inline-flex items-center justify-center px-8 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300  border border-white text-white hover:bg-white/20"

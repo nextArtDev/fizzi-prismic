@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     
       <section
-        className={`min-h-screen  overflow-x-hidden  `}
+        className={ ``}
       >
         <NavBar/>
         {children}
