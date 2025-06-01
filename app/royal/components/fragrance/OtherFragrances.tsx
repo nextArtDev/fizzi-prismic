@@ -55,7 +55,7 @@ export const OtherFragrances = async ({
                 </h3>
                 <p className="text-sm text-neutral-400">Eau de Parfum</p>
                 <p className="text-base font-light">
-                  {formatPrice(fragrance.price)}
+                  {formatPrice(+fragrance.price)}
                 </p>
               </div>
             </Link>

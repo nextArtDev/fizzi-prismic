@@ -4,7 +4,7 @@ import { HiStar } from "react-icons/hi2";
  
 import { Bounded } from "@/components/Bounded";
 import Image from "next/image";
-import { FragranceAttributes } from "../../components/fragrance/fragrance-attributes";
+import { FragranceAttributes, MoodKey, ScentProfileKey } from "../../components/fragrance/fragrance-attributes";
 import { formatPrice } from "@/lib/utils";
 import { fragrances } from "../../constants";
 import { OtherFragrances } from "../../components/fragrance/OtherFragrances";
@@ -21,8 +21,8 @@ type Params = { id: string };
 
 export default async function Page({ params }: { params: Promise<Params> }) {
   const { id } = await params;
- const otherFragrance = fragrances.filter(fr=>fr.id!==id)
- const fragrance = fragrances.filter(fr=>fr.id===id)
+ 
+ const fragrance = fragrances.filter(fr=>fr.id===id)[0]
 
 
   return (
@@ -31,19 +31,17 @@ export default async function Page({ params }: { params: Promise<Params> }) {
         <div className="relative mb-14 flex justify-center pb-10">
           <Image
       
-            src={fragrance?.[0].featuredImage}
+            src={fragrance?.featuredImage}
             alt=""
 
             width={600}
             height={600}
             priority
-            className="absolute top-[90%] -scale-y-100 [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0)_70%,rgba(0,0,0,.15)_100%)]"
+            className="absolute top-[90%] -scale-y-90 [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0)_70%,rgba(0,0,0,.15)_100%)]"
           />
       <Image
-     
-     src={fragrance?.[0].featuredImage}
+     src={fragrance?.featuredImage}
             alt=""
- 
             width={600}
             height={600}
             priority
@@ -62,14 +60,19 @@ export default async function Page({ params }: { params: Promise<Params> }) {
             <p className="text-md font-semibold">Eau de Parfum Spray</p>
 
             {/* <PrismicRichText field={page.data.description} /> */}
-            <p>description</p>
+            <p>{fragrance?.description}</p>
 
             {/* <FragranceAttributes
-              mood={fragrance?.[0].mood}
-              scentProfile={fragrance?.[0].scent}
+              mood={fragrance?.mood}
+              scentProfile={fragrance?.scent}
             /> */}
+            <FragranceAttributes
+                      scentProfile={fragrance.scent as ScentProfileKey}
+                      mood={ fragrance.mode as MoodKey}
+                   
+                    />
             <p className="mt-10 text-3xl font-light">
-              {formatPrice(+fragrance?.[0].price)}
+              {formatPrice(+fragrance?.price)}
             </p>
 
             <button className="w-full bg-white py-3 font-medium text-black uppercase transition duration-200 hover:bg-neutral-200">
