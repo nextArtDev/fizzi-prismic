@@ -14,6 +14,7 @@ import {
   HiXMark,
 } from "react-icons/hi2";
 import { navigation_link } from "../constants";
+import { TransitionLink } from "./TransitionLink";
 // import { TransitionLink } from "@/components/TransitionLink";
 
 type NavIconsProps = {
@@ -23,15 +24,15 @@ type NavIconsProps = {
 
 const NavIcons = ({ className = "", tabIndex }: NavIconsProps) => (
   <div className={clsx("flex items-center gap-8", className)}>
-    <a href="#" className="text-white" aria-label="Search" tabIndex={tabIndex}>
+    <TransitionLink href="#" className="text-white" aria-label="Search" tabIndex={tabIndex}>
       <HiMagnifyingGlass size={24} />
-    </a>
-    <a href="#" className="text-white" aria-label="Account" tabIndex={tabIndex}>
+    </TransitionLink>
+    <TransitionLink href="#" className="text-white" aria-label="Account" tabIndex={tabIndex}>
       <HiUser size={24} />
-    </a>
-    <a href="#" className="text-white" aria-label="Cart" tabIndex={tabIndex}>
+    </TransitionLink>
+    <TransitionLink href="#" className="text-white" aria-label="Cart" tabIndex={tabIndex}>
       <HiShoppingBag size={24} />
-    </a>
+    </TransitionLink>
   </div>
 );
 
@@ -58,15 +59,16 @@ export const NavBar = ( ) => {
           </button>
 
           <div className="absolute left-1/2 -translate-x-1/2 transform">
-            <Link href="/">
+            <TransitionLink href="/">
               <Image
                 src="/royal/logo.svg"
                 alt="Côte Royale Paris"
                 width={180}
                 height={30}
                 className="w-32 md:w-44"
+               
               />
-            </Link>
+            </TransitionLink>
           </div>
 
           <div className="flex">
@@ -114,15 +116,16 @@ export const NavBar = ( ) => {
             //   className="block border-b border-white/10 py-2 text-xl font-semibold tracking-wide text-white uppercase hover:text-gray-300"
             //   tabIndex={isDrawerOpen ? 0 : -1}
             // />
-            <Link
+            <TransitionLink
               href={link.href}
               onClick={() => setIsDrawerOpen(false)}
               key={link.id}
               className="block border-b border-white/10 py-2 text-xl font-semibold tracking-wide text-white uppercase hover:text-gray-300"
               tabIndex={isDrawerOpen ? 0 : -1}
-            />
+            > {link.label}</TransitionLink>
           ))}
           <div className="pt-4 md:hidden">
+           
             <NavIcons
               className="justify-around"
               tabIndex={isDrawerOpen ? 0 : -1}

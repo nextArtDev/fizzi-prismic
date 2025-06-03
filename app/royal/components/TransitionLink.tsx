@@ -7,14 +7,12 @@ export type TransitionLinkProps = {
   onClick?: () => void;
   tabIndex?: number;
 } & (
-  | { field: LinkField | null; document?: never; href?: never }
-  | { field?: never; document: PrismicDocument | null; href?: never }
+   
   | { field?: never; document?: never; href: string }
 );
 
 export const TransitionLink = ({
-  field,
-  document: doc,
+ 
   href,
   children,
   className,
@@ -36,7 +34,7 @@ export const TransitionLink = ({
       onClick={onClick}
       tabIndex={tabIndex}
     >
-      {field?.text ?? children}
+      {  children}
     </Link>
   );
 };

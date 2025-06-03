@@ -10,6 +10,7 @@ import { FadeIn } from "../fade-in";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FragranceAttributes, MoodKey, ScentProfileKey } from "./fragrance-attributes";
+import { TransitionLink } from "../TransitionLink";
 
 type FragranceDisplayProps = {
  
@@ -96,9 +97,9 @@ image,
           {/* <ButtonLink document={fragrance} variant="Secondary">
             Discover
           </ButtonLink> */}
-          <Link  href={`/royal/fragrance/${id}`} className="">
+          <TransitionLink  href={`/royal/fragrance/${id}`} className="">
             Discover
-          </Link>
+          </TransitionLink>
           <Link  href={''} className=" w-fit inline-flex items-center justify-center px-8 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300  border border-white text-white hover:bg-white/20"
          >
           

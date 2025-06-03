@@ -4,10 +4,10 @@ import IginsAd from '../../../public/royal/ignis.png'
 import Aqua from '../../../public/royal/aqua.png' 
 import Terra from '../../../public/royal/terra.png' 
 export const navigation_link = [
-    {id:'1', label:'Home' ,href:'/' }
-    ,{id:'2', label:'Ignis' ,href:'/' }
-    ,{id:'3', label:'Aqua' ,href:'/' }
-    ,{id:'4', label:'Terra' ,href:'/' }
+    {id:'1', label:'Home' ,href:'/royal' }
+    ,{id:'2', label:'Ignis' ,href:'/royal/fragrance/3' }
+    ,{id:'3', label:'Aqua' ,href:'/royal/fragrance/2' }
+    ,{id:'4', label:'Terra' ,href:'/royal/fragrance/1' }
 ]
 export const scrollText = {
     eyebrow:'Defining Luxury',

@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { Footer } from "./components/Footer"
 import { NavBar } from "./components/NavBar"
+import { ViewTransitions } from "next-view-transitions"
 
 export const metadata: Metadata = {
   title: 'Royal',
@@ -12,14 +13,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    
+    <ViewTransitions>
+
       <section
         className={ ``}
-      >
+        >
         <NavBar/>
         {children}
         <Footer />
       </section>
+     </ViewTransitions>
  
   )
 }

@@ -34,7 +34,7 @@ export const OtherFragrances = async ({
         {otherFragrances.map((fragrance) => (
           <li key={fragrance.id}>
     
-            <Link href={fragrance.id} className="group">
+            <TransitionLink href={fragrance.id} className="group">
               <div className="relative aspect-square w-full transition-transform duration-500 group-hover:scale-105">
      
                 <Image
@@ -58,7 +58,7 @@ export const OtherFragrances = async ({
                   {formatPrice(+fragrance.price)}
                 </p>
               </div>
-            </Link>
+            </TransitionLink>
           </li>
         ))}
       </ul>
