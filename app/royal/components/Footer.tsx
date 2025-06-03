@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { TransitionLink } from "./TransitionLink";
 // import { TransitionLink } from "@/app/royal/components/TransitionLink";
 
 export const Footer = () => {
   return (
-    <footer aria-labelledby="footer-heading" className="bg-black py-16">
+    <footer aria-labelledby="footer-heading" className="footer bg-black py-16">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -42,13 +43,13 @@ export const Footer = () => {
           >
             <Image src="/logo.svg" alt="CÔTE ROYALE" width={150} height={25} />
           </TransitionLink> */}
-          <Link
-            href="/"
+          <TransitionLink
+            href="/royal"
             aria-label="Côte Royale Home"
             className="order-first md:order-none"
           >
             <Image src="/royal/logo.svg" alt="CÔTE ROYALE" width={150} height={25} />
-          </Link>
+          </TransitionLink>
           <ul
             aria-label="Legal"
             className="flex flex-wrap justify-center gap-6 text-sm text-gray-400"
@@ -97,12 +98,10 @@ type NavLinkProps = {
 const NavLink = ({ href, children }: NavLinkProps) => {
   return (
     <li>
-      {/* <TransitionLink href={href} className="hover:text-gray-300">
+      <TransitionLink href={href} className="hover:text-gray-300">
         {children}
-      </TransitionLink> */}
-      <Link href={href} className="hover:text-gray-300">
-        {children}
-      </Link>
+      </TransitionLink>
+      
     </li>
   );
 };

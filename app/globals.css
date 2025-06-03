@@ -39,6 +39,8 @@ body {
     radial-gradient(at 90% 5%, hsla(200, 80%, 5%, 0.2) 0px, transparent 50%),
     radial-gradient(at 90% 80%, hsla(230, 80%, 10%, 0.2) 0px, transparent 50%);
 }
+
+/* view transition  */
 @keyframes fade-in {
   from {
     opacity: 0;
