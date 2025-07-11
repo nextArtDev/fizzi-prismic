@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useRef } from "react";
+import {  useRef } from "react";
 // import { asText, Content } from "@prismicio/client";
 // import { SliceComponentProps } from "@prismicio/react";
 import { useGSAP } from "@gsap/react";

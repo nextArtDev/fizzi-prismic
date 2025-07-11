@@ -41,7 +41,7 @@ export const FadeIn = ({
           },
         });
       });
-
+ 
       // Accessability, no animation needed
       mm.add("(prefers-reduced-motion: reduce)", () => {
         gsap.to(containerRef.current, {
