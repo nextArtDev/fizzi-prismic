@@ -1,12 +1,23 @@
 import type { Config } from "tailwindcss";
+import fluid, {
+  extract,
+  screens,
+  fontSize,
+  FluidThemeConfig,
+} from "fluid-tailwind";
 
 const config: Config = {
-  content: [
+  content: { files:[
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
+  ],extract,},
+  theme: { 
+    fluid: (({ theme }) => ({
+      defaultScreens: ["20rem", theme("screens.lg")],
+    })) satisfies FluidThemeConfig,
+     screens,
+    fontSize,
     extend: {
       colors: {
         background: "var(--background)",
@@ -45,6 +56,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [fluid],
 };
 export default config;

@@ -41,15 +41,15 @@ const Hero = ( )  => {
       </div>
 
       <div className="absolute inset-0 mx-auto mt-24 grid max-w-6xl grid-rows-[1fr,auto] place-items-end px-6 ~py-10/16">
-        <Heading className="relative max-w-2xl place-self-start">
+        <Heading className="relative capitalize max-w-2xl place-self-start">
           {/* <PrismicText field={slice.primary.heading} /> */}
-          <p>Familiar Skateboards</p>
+          <p>escape the cul-de-sac</p>
         </Heading>
         <div className="flex relative w-full flex-col items-center justify-between ~gap-2/4 lg:flex-row">
           <div className="max-w-[45ch] font-semibold ~text-lg/xl">
             {/* <PrismicRichText field={slice.primary.body} /> */}
             <p>
-                Est ex proident commodo elit aliqua. Nisi elit cupidatat non sunt sint minim et pariatur occaecat dolor adipisicing consectetur nisi. Sit dolore nostrud proident magna ipsum est id mollit magna commodo ea et voluptate nostrud.
+                Not just a board, your board. Design a board that&apos;s as real as the places you take it.
             </p>
           </div>
           {/* {slice.primary.button.text} */}
@@ -59,7 +59,7 @@ const Hero = ( )  => {
             // size="lg"
             className="z-20 mt-2 block"
           >
-            cowboy
+            Build Your Board
           </button>
         </div>
       </div>
