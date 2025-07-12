@@ -111,7 +111,7 @@ body {
 /* Skateboard */
 
 .bg-texture {
-  background-image: url("/bg-texture.webp");
+  background-image: url("/skateboard/bg-texture.webp");
   background-size: 720px 460px;
   background-repeat: repeat;
   background-position: center;
