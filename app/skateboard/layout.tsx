@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { Header } from "./components/Header"
  
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
       <section
         className={ ``}
         >
+          <Header/>
        
          {children}
       </section>
