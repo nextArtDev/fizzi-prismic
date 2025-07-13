@@ -52,7 +52,7 @@ const config: Config = {
         "slide-left": "slide-left 3s linear infinite",
         "spin-slow": "spin 6s linear infinite",
         //skateboard
-          squiggle: "squiggle .5s infinite",
+          squiggle: "squiggle 0.5s infinite",
       },
     },
   },

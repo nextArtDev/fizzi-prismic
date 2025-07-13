@@ -40,7 +40,7 @@ export function ButtonLink({
         <>
           <div
             className={clsx(
-              "flex size-6 items-center justify-center transition-transform group-hover:-rotate-[25deg] [&>svg]:h-full [&>svg]:w-full",
+              "flex  size-6 items-center justify-center transition-transform group-hover:-rotate-[25deg] [&>svg]:h-full [&>svg]:w-full",
               size === "sm" && "size-5",
               size === "md" && "size-6",
               size === "lg" && "~size-6/8"
@@ -50,7 +50,7 @@ export function ButtonLink({
             {icon === "skateboard" && <SkateboardIcon />}
             {icon === "plus" && <FaPlus />}
           </div>
-          <div className="w-px self-stretch bg-black/25" />
+          <div className="w-px self-stretch  bg-black/25" />
         </>
       ) : null}
       {children}
