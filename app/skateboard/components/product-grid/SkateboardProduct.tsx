@@ -1,10 +1,5 @@
- 
 import { FaStar } from "react-icons/fa6";
-
- 
-// import { HorizontalLine, VerticalLine } from "@/components/Line";
 import clsx from "clsx";
- 
 import { Scribble } from "./Scribble";
 import Image from "next/image";
 import { ButtonLink } from "../shared/ButtonLink";
@@ -38,8 +33,14 @@ export async function SkateboardProduct({ product }: Props) {
   // const price = isFilled.number(product?.price)
   //   ? `$${(product?.price / 100).toFixed(2)}`
   //   : "Price Not Available";
+  const price = product?.price
+    ? `$${(product?.price / 100).toFixed(2)}`
+    : "Price Not Available";
 
   // const dominantColor = isFilled.image(product?.image)
+  //   ? await getDominantColor(product?.image )
+  //   : undefined;
+  // const dominantColor =  product?.image 
   //   ? await getDominantColor(product?.image )
   //   : undefined;
 
@@ -50,7 +51,7 @@ export async function SkateboardProduct({ product }: Props) {
       <HorizontalLine className={HORIZONTAL_LINE_CLASSES} />
 
       <div className="flex items-center justify-between ~text-sm/2xl">
-        <span>{product?.price}</span>
+        <span>{price}</span>
         <span className="inline-flex items-center gap-1">
           <FaStar className="text-yellow-400" /> 37
         </span>
@@ -66,7 +67,7 @@ export async function SkateboardProduct({ product }: Props) {
           src={product?.image}
           width={150}
           height={450}
-          className=" mx-auto w-[58%] !w-[150px]   origin-top transform-gpu transition-transform duration-500 ease-in-out group-hover:scale-150"
+          className=" mx-auto w-[58%] origin-top transform-gpu transition-transform duration-500 ease-in-out group-hover:scale-150"
         />
       </div>
       <HorizontalLine className={HORIZONTAL_LINE_CLASSES} />
