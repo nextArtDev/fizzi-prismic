@@ -25,6 +25,7 @@ export function ParallaxImage({
   const backgroundRef = useRef<HTMLDivElement>(null);
   const foregroundRef = useRef<HTMLDivElement>(null);
 
+  // useRef doesn't rerender the component, so we use it here
   const targetPosition = useRef({ x: 0, y: 0 });
   const currentPosition = useRef({ x: 0, y: 0 });
 
@@ -92,7 +93,7 @@ export function ParallaxImage({
         <Image
           src={foregroundImage}
           alt=""
-          height={600}
+          height={500}
           width={450}
           // imgixParams={{ height: 600 }}
           className="h-full max-h-[500px] w-auto"
