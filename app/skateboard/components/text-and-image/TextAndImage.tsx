@@ -51,7 +51,7 @@ const TextAndImage = ({   index,item:slice }: {index:number,item:{
           <SlideIn>
             <Heading size="lg" as="h2">
               {/* <PrismicText field={slice.primary.heading} /> */}
-              <h2 className="text-xl font-bold">{slice.heading}</h2>
+              <h2 className="text-3xl font-bold">{slice.heading}</h2>
             </Heading>
           </SlideIn>
           <SlideIn>
