@@ -1,12 +1,9 @@
-"use client";
+# How to create an intersectional observer
 
- 
-import { useEffect, useRef, useState } from "react";
+threshold is for when it observes
+rootMargin is for before or after it observes
 
-type VideoProps = {
-  youTubeID: string;
-};
-
+```ts
 export function LazyYouTubePlayer({ youTubeID }: VideoProps) {
     
   const [isInView, setIsInView] = useState(false);
@@ -39,12 +36,11 @@ export function LazyYouTubePlayer({ youTubeID }: VideoProps) {
     <div className="relative h-full w-full" ref={containerRef}>
       {isInView && (
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${youTubeID}?autoplay=1&mute=1&loop=1&playlist=${youTubeID}`}
-        //  src={`/royal/ink101.mp4`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          className="pointer-events-none h-full w-full border-0"
+          //..
         />
       )}
     </div>
   );
 }
+
+```

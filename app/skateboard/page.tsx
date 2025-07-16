@@ -17,7 +17,7 @@ const page = () => {
           
         ))}
         </section>
-        <section className=" ">
+        <section className=" w-full h-full">
 
         <VideoBlock/>
         </section>

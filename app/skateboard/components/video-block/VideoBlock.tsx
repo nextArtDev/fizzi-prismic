@@ -13,10 +13,10 @@ const VideoBlock = ( )  => {
   return (
     <Bounded
      
-      className="bg-texture bg-zinc-900 min-h-screen "
+      className="bg-texture bg-zinc-900 min-h-screen w-full "
     >
       <h2 className="sr-only">Video Reel</h2>
-      <div className="relative aspect-video">
+      <div className="relative w-full aspect-video">
         {/* Masks */}
         <div
           className={clsx(
