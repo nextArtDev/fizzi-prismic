@@ -4,6 +4,7 @@ import ProductGrid from './components/product-grid/ProductGrid'
 import { textAndImage } from './constants'
 import TextAndImage from './components/text-and-image/TextAndImage'
 import VideoBlock from './components/video-block/VideoBlock'
+import TeamGrid from './components/team-grid/TeamGrid'
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
 
         <VideoBlock/>
         </section>
+        <TeamGrid/>
     </div>
   )
 }

@@ -20,3 +20,10 @@ export const textAndImage=[
     {id:'3',theme:'Navy',variation:'imageOnLeft',heading:'Built for Hard Landings',body:'Skateboarding isn’t always smooth. Our boards are built tough to survive the scuffs, scratches, and slams that come with real skating.', buttonText:'Shop Boards',buttonLink:"",foreground_image:'/skateboard/tai/tai3.avif',background_image:'/skateboard/tai/tai-background.png' },
     {id:'4',theme:'Lime',variation:'',heading:'Fueling the Next Generation',body:'We’re committed to supporting young skaters and DIY projects, giving back to the communities that keep skateboarding alive and evolving.', buttonText:'Shop Boards',buttonLink:"",foreground_image:'/skateboard/tai/tai4.avif',background_image:'/skateboard/tai/tai-background.png' },
 ] as const 
+
+export const skaters =[
+    {id:'1',first_name:'sophie',last_name:'castillo',imageUrl:'/skateboard/team/team-1.png',bgImage:'/skateboard/team/team-bg-1.jpg',customizer_link:''},
+    {id:'2',first_name:'Dylan',last_name:'Foster',imageUrl:'/skateboard/team/team-2.png',bgImage:'/skateboard/team/team-bg-2.png',customizer_link:''},
+    {id:'3',first_name:'Carter',last_name:'Bell',imageUrl:'/skateboard/team/team-3.png',bgImage:'/skateboard/team/team-bg-3.jpg',customizer_link:''},
+    {id:'4',first_name:'Jordan',last_name:'Lee',imageUrl:'/skateboard/team/team-4.png',bgImage:'/skateboard/team/team-bg-4.jpg',customizer_link:''},
+]
