@@ -5,6 +5,7 @@ import { textAndImage } from './constants'
 import TextAndImage from './components/text-and-image/TextAndImage'
 import VideoBlock from './components/video-block/VideoBlock'
 import TeamGrid from './components/team-grid/TeamGrid'
+import { Footer } from './components/footer/Footer'
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
         <VideoBlock/>
         </section>
         <TeamGrid/>
+        <Footer/>
     </div>
   )
 }

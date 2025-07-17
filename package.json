@@ -17,6 +17,7 @@
     "@vercel/functions": "^1.6.0",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
+    "matter-js": "^0.20.0",
     "next": "15.3.2",
     "next-view-transitions": "^0.3.4",
     "react": "19.1.0",
@@ -26,6 +27,7 @@
     "zustand": "5.0.0-rc.2"
   },
   "devDependencies": {
+    "@types/matter-js": "^0.19.8",
     "@types/node": "^20.17.50",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",

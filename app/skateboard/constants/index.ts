@@ -27,3 +27,11 @@ export const skaters =[
     {id:'3',first_name:'Carter',last_name:'Bell',imageUrl:'/skateboard/team/team-3.png',bgImage:'/skateboard/team/team-bg-3.jpg',customizer_link:''},
     {id:'4',first_name:'Jordan',last_name:'Lee',imageUrl:'/skateboard/team/team-4.png',bgImage:'/skateboard/team/team-bg-4.jpg',customizer_link:''},
 ]
+
+export const settings= 
+    { footer_image:'/skateboard/footer.jpg',navigation:[
+        {id:'1', title:'Team',link:'/team'},
+        {id:'2', title:'Customizer',link:'/customizer'},
+        {id:'3', title:'About',link:'/about'},
+    ]} 
+ 
