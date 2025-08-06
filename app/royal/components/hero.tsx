@@ -35,7 +35,7 @@ const Hero = ( ) => {
           className="mt-6 max-w-md translate-y-8  text-lg text-neutral-100"
           vars={{ delay: 1, duration: 1.3 }}
         >
-
+ 
         
         <p  className=" " >An expression of quiet luxury, Côte Royale is designed for the man who commands attention without seeking it. A reflection of nature’s raw beauty.</p>
         </FadeIn>

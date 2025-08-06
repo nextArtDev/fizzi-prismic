@@ -12,10 +12,10 @@ const TeamGrid =   ( ) => {
   return (
     <Bounded
  
-      className="bg-texture bg-brand-navy"
+      className="bg-texture bg-brand-navy py-10"
     >
       <SlideIn>
-        <Heading as="h2" size="lg" className="mb-8 text-center text-white">
+        <Heading as="h2" size="lg" className="mb-8 text-center text-white ">
           {/* <PrismicText field={slice.primary.heading} /> */}
           <h1 className="font-bold text-3xl md:text-5xl">The Team</h1>
         </Heading>

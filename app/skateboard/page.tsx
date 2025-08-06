@@ -23,7 +23,10 @@ const page = () => {
 
         <VideoBlock/>
         </section>
+       
+
         <TeamGrid/>
+        
         <Footer/>
     </div>
   )
